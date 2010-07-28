@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    1
+Release:    %mkrel 2
 
 Summary:    Report the search path thru an ISA tree
 License:    GPL+ or Artistic
@@ -38,11 +38,10 @@ with no duplicates.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-
-%{make}
+%make
 
 %check
-%{make} test
+%make test
 
 %install
 rm -rf %buildroot
@@ -56,5 +55,3 @@ rm -rf %buildroot
 %doc README ChangeLog
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
