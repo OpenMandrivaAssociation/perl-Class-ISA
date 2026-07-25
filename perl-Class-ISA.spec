@@ -3,12 +3,12 @@
 
 Summary:	Report the search path thru an ISA tree
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	16
+Version:	%{upstream_version}
+Release:	17
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Class/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/Class-ISA
+Source0:	https://cpan.metacpan.org/authors/id/S/SM/SMUELLER/Class-ISA-%{upstream_version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl(Test)
